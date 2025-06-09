@@ -1,0 +1,21 @@
+public class Book{
+    String Title;
+    int pages;
+    Book(String t,int p){
+        Title=t;
+        pages=p;
+    }
+    Book(Book b){
+        Title=b.Title;
+        pages=b.pages;
+    }
+    void display(){
+        System.out.println("Title"+title +"pages"+pages);
+    }
+    public static void main(String[] args){
+        Book b1=new Book("hello",78);
+        Book b2=new Book(b1);
+        b1.display();
+        b2.display();
+    }
+}
