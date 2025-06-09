@@ -1,0 +1,19 @@
+public class ArraySearch{
+    public static void main(String[] args){
+        int [] arr={10,20,30,40,50};
+        int key=30;
+        Boolean found=false;
+        for(int num:arr){
+            if(key==found){
+                found=true;
+                break;
+            }
+        }
+        if(found){
+            System.out.println("the value is found");
+        }
+        else{
+            System.out.println("value is not found");
+        }
+    }
+}
