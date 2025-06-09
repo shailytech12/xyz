@@ -1,0 +1,21 @@
+public class StaticDemo{
+    static int count=0;
+    static{
+        System.out.println("static block executed");
+    
+    }
+    static void staticMethod(){
+        System.out.println("static Method Count:"+count);
+    }
+    static class NestedStaticClass{
+        void display(){
+        System.out.println("Inside static nested class");
+        }
+    }
+    public static void main(String[] args){
+        count=5;
+        staticMethod();
+        StaticDemo.NestedStaticClass nested=new StaticDemo.NestedStaticClass();
+        nested.display();
+    }
+}
