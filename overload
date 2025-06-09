@@ -1,0 +1,17 @@
+public class OverloadExample{
+    void display(){
+        System.out.println("no parameters");
+    }
+    void display(int a){
+        System.out.println("one int:"+a);
+    }
+    void display(int a ,String b){
+        System.out.println("Int and String:"+a+" ,"+b);
+    }
+    public static void main(String[] args){
+        OverloadExample obj=new OverloadExample();
+        obj.display();
+        obj.display(10);
+        obj.display(2,"apple");
+    }
+}
