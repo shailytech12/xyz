@@ -1,0 +1,22 @@
+public class Student{
+    int id;
+    String name;
+    Student(int i,String n){
+        id=i;
+        name=n;
+    }
+    boolean isEqual(Student s){
+        return (this.id==s.id && this.name.equals(s.name));
+    }
+    public static void main(String [] args){
+        Student s1=new Student(23,"shailss");
+        Student s2=new Student(23,"shailss");
+        if(s1.isEqual(s2)){
+            System.out.println("objects are equal");
+        }
+        else{
+            System.out.println("objects are not equal");
+        }
+    }
+
+}
